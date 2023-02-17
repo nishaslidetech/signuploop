@@ -32,7 +32,7 @@ public class SignUpLoop extends SetClass {
 
 		for (int j = 1; j <= 50; j++) {
 
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			try {
 				driver.findElement(By.cssSelector("ul.header > li:nth-child(1) > a:nth-child(1)")).click();
 				Thread.sleep(2000);
@@ -94,7 +94,7 @@ public class SignUpLoop extends SetClass {
 			new_btn_signup.click();
 			Thread.sleep(3000);
 
-			Thread.sleep(2000);
+			Thread.sleep(6000);
 
 			// verify pricing page and select a plan
 
@@ -128,9 +128,9 @@ public class SignUpLoop extends SetClass {
 			WebElement account = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'My Account')]")));
 			account.click();
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 
-			chatWindow();
+			
 			WebElement delete_account = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@id, 'clicking')]/self::a")));
 			Thread.sleep(3000); //
@@ -146,7 +146,7 @@ public class SignUpLoop extends SetClass {
 					.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button#delete-final")));
 			js.executeScript("arguments[0].click();", delete_profile);
 			Thread.sleep(3000);
-			chatWindow();
+		
 
 			WebElement delete_profile_coupon = wait.until(
 					ExpectedConditions.elementToBeClickable(By.xpath("//button[@class = 'btn btn-default button_2']")));
