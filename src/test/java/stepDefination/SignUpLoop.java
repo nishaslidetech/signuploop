@@ -30,7 +30,7 @@ public class SignUpLoop extends SetClass {
 	@Then("verify signup process in a loop")
 	public void verify_signup_process_in_a_loop() throws Throwable {
 
-		for (int j = 1; j <= 2; j++) {
+		for (int j = 1; j <= 50; j++) {
 
 			Thread.sleep(4000);
 			try {
